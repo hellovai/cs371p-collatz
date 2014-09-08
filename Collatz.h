@@ -14,6 +14,9 @@
 #include <iostream> // istream, ostream
 #include <utility>  // pair
 
+#define BASE 0
+#define MAX_SIZE 500000
+
 // ------------
 // cycle_length
 // ------------

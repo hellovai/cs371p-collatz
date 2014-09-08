@@ -100,6 +100,17 @@ TEST(Collatz, solve) {
     collatz_solve(r, w);
     ASSERT_EQ("1 10 20\n100 200 125\n201 210 89\n900 1000 174\n", w.str());}
 
+TEST(Collatz, solve) {
+    std::istringstream r("1 1000000\n");
+    std::ostringstream w;
+    collatz_solve(r, w);
+    ASSERT_EQ("1 1000000 525\n", w.str());}
+
+TEST(Collatz, solve) {
+    std::istringstream r("");
+    std::ostringstream w;
+    collatz_solve(r, w);
+    ASSERT_EQ("", w.str());}
 /*
 % ls -al /usr/include/gtest/
 ...

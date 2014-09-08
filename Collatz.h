@@ -1,7 +1,7 @@
 // --------------------------
-// projects/collatz/Collatz.h
+// cs371p-collatz/Collatz.c++
 // Copyright (C) 2014
-// Glenn P. Downing
+// Vaibhav Gupta
 // --------------------------
 
 #ifndef Collatz_h

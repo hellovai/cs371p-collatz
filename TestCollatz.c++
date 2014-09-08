@@ -33,6 +33,21 @@ TEST(Collatz, read) {
     ASSERT_EQ( 1, p.first);
     ASSERT_EQ(10, p.second);}
 
+TEST(Collatz, read) {
+    std::istringstream r("1 10\n1 20\n");
+    const std::pair<int, int> p = collatz_read(r);
+    ASSERT_EQ( 1, p.first);
+    ASSERT_EQ(10, p.second);
+    p = collatz_read(r);
+    ASSERT_EQ( 1, p.first);
+    ASSERT_EQ(20, p.second);}
+
+TEST(Collatz, read) {
+    std::istringstream r("\n");
+    const std::pair<int, int> p = collatz_read(r);
+    ASSERT_EQ(0, p.first);
+    ASSERT_EQ(0, p.second);}
+
 // ----
 // eval
 // ----

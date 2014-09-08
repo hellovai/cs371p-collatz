@@ -70,5 +70,5 @@ void collatz_solve (std::istream& r, std::ostream& w) {
             return;
         const int i = p.first;
         const int j = p.second;
-        const int v = collatz_eval(i, j);
+        const int v = collatz_eval(std::min(i, j), std::max(i, j));
         collatz_print(w, i, j, v);}}

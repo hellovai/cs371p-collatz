@@ -11,8 +11,22 @@
 #include <cassert>  // assert
 #include <iostream> // endl, istream, ostream
 #include <utility>  // make_pair, pair
+#include <algorithm> // max
 
 #include "Collatz.h"
+
+
+// ------------
+// cycle_length
+// ------------
+
+int cycle_length (unsigned int num) {
+  int length = 1;
+  while (num != 1) {
+    length += 1 + (num & 0x1);
+    num = (num >> 1) + (num & 0x1) * (num + 1);}
+  return length;}
+
 
 // ------------
 // collatz_read
@@ -32,8 +46,11 @@ std::pair<int, int> collatz_read (std::istream& r) {
 // ------------
 
 int collatz_eval (int i, int j) {
-    // <your code>
-    return 1;}
+    int max_val = 0;
+    int base = std::max(i, j/2 + 1);
+    for (int i = base; i <= j; ++i) {
+        max_val = std::max(max_val, cycle_length(i));}
+    return max_val;}
 
 // -------------
 // collatz_print

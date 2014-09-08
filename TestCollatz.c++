@@ -77,6 +77,19 @@ TEST(Collatz, print) {
     collatz_print(w, 1, 10, 20);
     ASSERT_EQ("1 10 20\n", w.str());}
 
+TEST(Collatz, print) {
+    std::ostringstream w;
+    collatz_print(w, 1, 10, 20);
+    collatz_print(w, 100, 200, 125);
+    ASSERT_EQ("1 10 20\n100 200 125\n", w.str());}
+
+TEST(Collatz, print) {
+    std::ostringstream w;
+    collatz_print(w, 1, 10, 20);
+    collatz_print(w, 100, 200, 125);
+    collatz_print(w, 201, 210, 89);
+    ASSERT_EQ("1 10 20\n100 200 125\n201 210 89\n", w.str());}
+
 // -----
 // solve
 // -----

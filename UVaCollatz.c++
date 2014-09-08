@@ -11,6 +11,14 @@
 #include <iostream> // endl, istream, ostream
 #include <utility>  // make_pair, pair
 
+#define BASE 0
+#define MAX_SIZE 500000
+
+// -----------
+// cache
+// -----------
+int cache[MAX_SIZE] = {};
+
 // ------------
 // cycle_length
 // ------------
@@ -18,6 +26,9 @@
 int cycle_length (unsigned int num) {
   int length = 1;
   while (num != 1) {
+    if (num > BASE && num < MAX_SIZE) {
+      if (cache[num] != 0) {
+        return length + cache[num] - 1;}}
     length += 1 + (num & 0x1);
     num = (num >> 1) + (-(num & 0x1) & (num + 1));}
   return length;}
@@ -42,8 +53,12 @@ std::pair<int, int> collatz_read (std::istream& r) {
 int collatz_eval (int i, int j) {
   int max_val = 0;
   i = std::max(i, j/2 + 1);
-  while (i <= j)
-    max_val = std::max(max_val, cycle_length(i++));
+  while (i <= j) {
+    int len = cycle_length(i);
+    if (i > BASE && i < MAX_SIZE) {
+      cache[i] = len;}
+    max_val = std::max(max_val, len);
+    i++;}
   return max_val;}
 
 // -------------

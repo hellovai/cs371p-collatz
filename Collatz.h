@@ -15,6 +15,16 @@
 #include <utility>  // pair
 
 // ------------
+// cycle_length
+// ------------
+
+/**
+ * @param num an unsigned int
+ * @return cycle length of a number num
+ */
+int cycle_length (unsigned int num);
+
+// ------------
 // collatz_read
 // ------------
 

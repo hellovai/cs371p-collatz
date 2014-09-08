@@ -21,11 +21,11 @@
 // ------------
 
 int cycle_length (unsigned int num) {
-  int length = 1;
-  while (num != 1) {
-    length += 1 + (num & 0x1);
-    num = (num >> 1) + (num & 0x1) * (num + 1);}
-  return length;}
+    int length = 1;
+    while (num != 1) {
+        length += 1 + (num & 0x1);
+        num = (num >> 1) + (-(num & 0x1) & (num + 1));}
+    return length;}
 
 
 // ------------
@@ -47,9 +47,9 @@ std::pair<int, int> collatz_read (std::istream& r) {
 
 int collatz_eval (int i, int j) {
     int max_val = 0;
-    int base = std::max(i, j/2 + 1);
-    for (int i = base; i <= j; ++i) {
-        max_val = std::max(max_val, cycle_length(i));}
+    i = std::max(i, j/2 + 1);
+    while (i <= j)
+        max_val = std::max(max_val, cycle_length(i++));
     return max_val;}
 
 // -------------

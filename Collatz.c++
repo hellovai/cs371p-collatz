@@ -25,6 +25,7 @@ int cache[MAX_SIZE] = {};
 // ------------
 
 int cycle_length (unsigned int num) {
+    assert(num >= 1);
     int length = 1;
     while (num != 1) {
         if (num > BASE && num < MAX_SIZE) {
@@ -53,6 +54,7 @@ std::pair<int, int> collatz_read (std::istream& r) {
 // ------------
 
 int collatz_eval (int i, int j) {
+    assert(i <= j);
     int max_val = 0;
     i = std::max(i, j/2 + 1);
     while (i <= j) {

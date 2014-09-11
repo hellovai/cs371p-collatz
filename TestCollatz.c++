@@ -34,7 +34,7 @@ TEST(Collatz, cycle_length_1) {
     ASSERT_EQ(9, cycle_length(6));}
 
 TEST(Collatz, cycle_length_2) {
-    ASSERT_EQ(111, cycle_length(27));}
+    ASSERT_EQ(112, cycle_length(27));}
 
 // ----
 // read

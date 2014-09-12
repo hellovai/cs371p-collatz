@@ -1,0 +1,196 @@
+commit 963423a1eb695859b8f0f548213e16f590c79712
+Author: Vaibhav Gupta <kacxdak@gmail.com>
+Date:   Thu Sep 11 19:13:19 2014 -0500
+
+    Adding TestCollatz.out
+
+commit 3a1917b19d7e20ac57f6e199ed45c4b5480bb47a
+Author: Vaibhav Gupta <vaibhavtheory@gmail.com>
+Date:   Thu Sep 11 17:00:51 2014 -0500
+
+    Adding documention. Closes #9
+
+commit 1db921f70b269e0f9de91d6bf1c8452e116971ae
+Author: Vaibhav Gupta <vaibhavtheory@gmail.com>
+Date:   Thu Sep 11 15:41:18 2014 -0500
+
+    Test cases are less than 32 bits in all cases
+
+commit 8124be43d6db5b88a6010117fa0e16889dab0094
+Author: Vaibhav Gupta <vaibhavtheory@gmail.com>
+Date:   Thu Sep 11 15:40:45 2014 -0500
+
+    Adding asserts, closes #4
+
+commit e48f75dd38a42618794a15b357b19dff80d58361
+Author: Vaibhav Gupta <vaibhavtheory@gmail.com>
+Date:   Thu Sep 11 03:08:17 2014 -0500
+
+    27 actually has a cycle_length of 112
+
+commit f0c6c429bd35434b78ed000f0cad32a0858b4407
+Author: Vaibhav Gupta <vaibhavtheory@gmail.com>
+Date:   Thu Sep 11 03:04:04 2014 -0500
+
+    Adding test cases for cycle_length. Fixes #12
+
+commit e4b4c78eeb27c510fc7c40638ce493f169ac7d60
+Merge: 77274b5 138cc4d
+Author: Vaibhav Gupta <vaibhavtheory@gmail.com>
+Date:   Thu Sep 11 02:48:00 2014 -0500
+
+    Merge branch 'master' of github.com:hellovai/cs371p-collatz
+
+commit 138cc4d3cd293148d8e582a80397740a5c3b0259
+Author: Vaibhav Gupta <kacxdak@gmail.com>
+Date:   Thu Sep 11 02:47:35 2014 -0500
+
+    Adding documentation
+
+commit 4133459cb978292fb44f5a8f1f61aebcec93abe6
+Author: Vaibhav Gupta <kacxdak@gmail.com>
+Date:   Thu Sep 11 02:47:00 2014 -0500
+
+    Compiling errors on cs machines fixed
+
+commit 77274b5e256d93b8c13bd494b4c8f766da47599e
+Merge: f48ee86 91c14c0
+Author: Vaibhav Gupta <vaibhavtheory@gmail.com>
+Date:   Mon Sep 8 03:38:00 2014 -0500
+
+    Merge branch 'master' of github.com:hellovai/cs371p-collatz
+
+commit 5e306301bd1e7825c382b152d94701f549d5c83b
+Merge: f48ee86 91c14c0
+Author: Vaibhav Gupta <vaibhavtheory@gmail.com>
+Date:   Mon Sep 8 03:38:00 2014 -0500
+
+    Merge branch 'master' of github.com:hellovai/cs371p-collatz
+
+commit f48ee86150566daac46b3702da8c2d370f9afa50
+Author: Vaibhav Gupta <vaibhavtheory@gmail.com>
+Date:   Mon Sep 8 03:35:00 2014 -0500
+
+    Simple cache implementation. Closes #8
+
+commit 91c14c026eb61688d0dad56fb45166c6b36fad6a
+Author: Vaibhav Gupta <vaibhavtheory@gmail.com>
+Date:   Mon Sep 8 03:35:00 2014 -0500
+
+    Simple cache implementation. Closes #8
+
+commit f29c75c4b671dd4645cd16005b0002a3c6cb3a8f
+Author: Vaibhav Gupta <vaibhavtheory@gmail.com>
+Date:   Mon Sep 8 03:26:59 2014 -0500
+
+    Adding 1000 line test case. Closes #7
+
+commit 5b375e0be51d8de2699c39fc75e3122e83ce1293
+Author: Vaibhav Gupta <vaibhavtheory@gmail.com>
+Date:   Mon Sep 8 03:26:07 2014 -0500
+
+    Fixes #20. Collatz_eval now accounts for i<j case
+
+commit b438772af90a48d850f462d5281c26bf144e5bf7
+Merge: d491ea3 1c22b31
+Author: Vaibhav Gupta <vaibhavtheory@gmail.com>
+Date:   Mon Sep 8 02:44:33 2014 -0500
+
+    Merge branch 'master' of github.com:hellovai/cs371p-collatz
+
+commit d491ea367c4ed50cdcf52a4585dd7547501c2d67
+Author: Vaibhav Gupta <vaibhavtheory@gmail.com>
+Date:   Mon Sep 8 02:42:53 2014 -0500
+
+    Merging Collatz.c++ and RunCollatz.c++ into UVaCollatz.c++. Also works on UVa Judge. Closes #6. Closes #11.
+
+commit 1c22b3128a5db132d3345032d881e344242e3c75
+Author: Vaibhav Gupta <vaibhavtheory@gmail.com>
+Date:   Mon Sep 8 02:42:53 2014 -0500
+
+    Merging Collatz.c++ and RunCollatz.c++ into UVaCollatz.c++. Closes #6
+
+commit 9a9d7ac08c6e836c435929e500b1309ef11267db
+Author: Vaibhav Gupta <vaibhavtheory@gmail.com>
+Date:   Mon Sep 8 02:41:12 2014 -0500
+
+    Adding micro optimizations
+
+commit 36b5f795aa0ca3751575cd1b10a2c2580415d394
+Author: Vaibhav Gupta <vaibhavtheory@gmail.com>
+Date:   Mon Sep 8 01:27:06 2014 -0500
+
+    Simplest possible implementation of collatz. Closes #5. Fixes #17.
+
+commit 330b2741d43e52669cefa70625cc5581b5794123
+Author: Vaibhav Gupta <vaibhavtheory@gmail.com>
+Date:   Mon Sep 8 00:59:01 2014 -0500
+
+    Fix makefile to use default g++. Fixes #19
+
+commit 10e9d0f7859202efb71555b68815a64f9fb405e0
+Author: Vaibhav Gupta <vaibhavtheory@gmail.com>
+Date:   Mon Sep 8 00:51:48 2014 -0500
+
+    Adding unit tests for solve. Fixes #14
+
+commit 16bae3c804bb341f035c525742cae714f27a417b
+Author: Vaibhav Gupta <vaibhavtheory@gmail.com>
+Date:   Mon Sep 8 00:41:38 2014 -0500
+
+    Fixes #13. Unit tests for print
+
+commit 709f42b826bc9fb84313242bc0b2403c214d007d
+Merge: b75367d b60b3d0
+Author: Vaibhav Gupta <vaibhavtheory@gmail.com>
+Date:   Mon Sep 8 00:38:23 2014 -0500
+
+    Merge branch 'master' of github.com:hellovai/cs371p-collatz
+
+commit b75367d395a5814b95783f092923acc778aeb71f
+Author: Vaibhav Gupta <vaibhavtheory@gmail.com>
+Date:   Mon Sep 8 00:36:55 2014 -0500
+
+    Fixes #3. Unit tests for read
+
+commit f52831d5499dca47d99e57dc27dd98d6c211ec1d
+Author: Vaibhav Gupta <vaibhavtheory@gmail.com>
+Date:   Mon Sep 8 00:01:22 2014 -0500
+
+    Fixes #18. Unit test for solve
+
+commit c05c25c7b64e4e4eea0ed70f11be490a1c5c44bc
+Author: Vaibhav Gupta <vaibhavtheory@gmail.com>
+Date:   Mon Sep 8 00:01:06 2014 -0500
+
+    Fixes #15. Unit test for eval
+
+commit b60b3d09bd2e17f7fe5e429f5210c8b633594f93
+Author: Vaibhav Gupta <vaibhavtheory@gmail.com>
+Date:   Mon Sep 8 00:36:55 2014 -0500
+
+    Fixes #3. Unit tests for read
+
+commit 03f771fe087a243f0c0380e353c81fbb612ec570
+Author: Vaibhav Gupta <vaibhavtheory@gmail.com>
+Date:   Mon Sep 8 00:01:22 2014 -0500
+
+    Fixs #18. Unit test for solve
+
+commit 1b244593cc42db4501a585703267cb6ce2e90a90
+Author: Vaibhav Gupta <vaibhavtheory@gmail.com>
+Date:   Mon Sep 8 00:01:06 2014 -0500
+
+    Fixs #15. Unit test for eval
+
+commit 4fc6da2b7fdcc08fba1fcda248ef0fbe1247014f
+Author: Vaibhav Gupta <vaibhavtheory@gmail.com>
+Date:   Sun Sep 7 23:43:11 2014 -0500
+
+    Fixes #16
+
+commit 9ca79ab7c606e08290aeb6c464ec3c9450836a6a
+Author: Vaibhav Gupta <vaibhavtheory@gmail.com>
+Date:   Sun Sep 7 23:41:12 2014 -0500
+
+    Coping files from public repo. Closes #2
